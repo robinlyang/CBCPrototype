@@ -3,6 +3,7 @@ package controller;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;
+import java.util.List;
 
 public class CustomerBroker extends RandomAccessFile
 {
@@ -56,6 +57,7 @@ public class CustomerBroker extends RandomAccessFile
 	//Operational Methods
 	public List search(Object o)
 	{
+		return null;
 		
 	}
 	

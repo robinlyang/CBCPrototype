@@ -4,45 +4,46 @@ import java.util.Date;
 
 public class Customer {
 	//Attributes
-	private boolean status;
-	private String customer;
-	private String currency;
-	private double balance;
-	private double totalBalance;
-	private String company;
-	private String title;  			//Mr. Mrs. Miss
-	private String firstName;
-	private String middleInitial;
-	private String lastName;
-	private String primaryContact;
-	private String mainPhone;
-	private String fax;
-	private String alternativePhone;
-	private String secondaryContact;
-	private String jobTitle;
-	private String mainEmail;
-	private String invoiceToOne;
-	private String invoiceToTwo;
-	private String invoiceToThree;
-	private String invoiceToFour;
-	private String invoiceToFive;
-	private String shipToOne;
-	private String shipToTwo;
-	private String shipToThree;
-	private String shipToFour;
-	private String shipToFive;
-	private String customerType;
-	private String terms;
-	private String rep;
-	private String salesTaxCode;
-	private String taxCountry;
-	private String businessNumber;
-	private String accountNumber;
-	private String creditLimit;
-	private String jobStatus;
-	private String jobType;
-	private String jobDescription;
-	private Date startDate;
+	private boolean status; 			// 1 byte
+	private String customer;			// 22 bytes
+	private String currency;			// 22 bytes
+	private double balance;				// 8 bytes
+	private double totalBalance;		// 8 bytes
+	private String company;				// 22 bytes
+	private String title;				// 22 bytes			//Mr. Mrs. Miss
+	private String firstName;			// 22 bytes	
+	private String middleInitial;		// 22 bytes	
+	private String lastName;			// 22 bytes	
+	private String primaryContact;		// 22 bytes	
+	private String mainPhone;			// 22 bytes	
+	private String fax;					// 22 bytes	
+	private String alternativePhone;	// 22 bytes	
+	private String secondaryContact;	// 22 bytes	
+	private String jobTitle;			// 22 bytes	
+	private String mainEmail;			// 22 bytes	
+	private String invoiceToOne;		// 22 bytes	
+	private String invoiceToTwo;		// 22 bytes	
+	private String invoiceToThree;		// 22 bytes	
+	private String invoiceToFour;		// 22 bytes	
+	private String invoiceToFive;		// 22 bytes	
+	private String shipToOne;			// 22 bytes	
+	private String shipToTwo;			// 22 bytes	
+	private String shipToThree;			// 22 bytes	
+	private String shipToFour;			// 22 bytes	
+	private String shipToFive;			// 22 bytes	
+	private String customerType;		// 22 bytes	
+	private String terms;				// 22 bytes	
+	private String rep;					// 22 bytes	
+	private String salesTaxCode;		// 22 bytes	
+	private String taxCountry;			// 22 bytes	
+	private String businessNumber;		// 22 bytes	
+	private String accountNumber;		// 22 bytes	
+	private String creditLimit;			// 22 bytes	
+	private String jobStatus;			// 22 bytes	
+	private String jobType;				// 22 bytes	
+	private String jobDescription;		// 22 bytes	
+	here
+	private Date startDate;				//TODO Find byte size of Date
 	private Date projectedEnd;
 	private Date endDate;
 	
