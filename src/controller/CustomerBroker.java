@@ -368,6 +368,21 @@ public class CustomerBroker extends RandomAccessFile
 	}
 
 	/**
+	 * Writes a record to the RandomAccessFile given the position in file and the 
+	 * customer object to write.  The strings for each customer are padded as follows: 
+	 * 
+	 * @param c - a Customer containing the customer's information
+	 * @return A boolean indicating true if the record has been added correctly and 
+	 * false if the record has not been added.
+	 * @throws IOException When connection with the RandomAccessFile is lost.
+	 */
+	private boolean writeRecord(Customer c) throws IOException
+	{
+		
+		return true;
+	}
+
+	/**
 	 * A method to determine the byte offset of a client record stored in the 
 	 * random access file.
 	 * @param customerID - the ID of the customer record being located.
@@ -378,7 +393,7 @@ public class CustomerBroker extends RandomAccessFile
 		try
 		{
 			seek(0L);
-			for (long i = 0L; i < length(); i += 891)
+			for (long i = 0L; i < length(); i += 996)
 			{
 				seek(i);
 				Customer c = readRecord();
@@ -399,11 +414,6 @@ public class CustomerBroker extends RandomAccessFile
 	private Customer readRecord() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-
-	private void writeRecord(Customer c) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	private List searchEndDate(ArrayList list, Date endDate) {

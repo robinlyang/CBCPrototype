@@ -8,47 +8,47 @@ import java.util.StringTokenizer;
 public class Customer {
 	//Attributes
 	private long customerID;			// 8 bytes			
-	private boolean status; 			// 1 byte			9
-	private String customer;			// 22 bytes			31
-	private String currency;			// 22 bytes			53
-	private double balance;				// 8 bytes			61
-	private double totalBalance;		// 8 bytes			69
-	private String company;				// 22 bytes			91
-	private String title;				// 22 bytes			113		//Mr. Mrs. Miss
-	private String firstName;			// 22 bytes			135
-	private String middleInitial;		// 22 bytes			157
-	private String lastName;			// 22 bytes			179
-	private String primaryContact;		// 22 bytes			201
-	private String mainPhone;			// 22 bytes			223
-	private String fax;					// 22 bytes			245
-	private String alternativePhone;	// 22 bytes			267
-	private String secondaryContact;	// 22 bytes			289
-	private String jobTitle;			// 22 bytes			311
-	private String mainEmail;			// 22 bytes			333
-	private String invoiceToOne;		// 22 bytes			355
-	private String invoiceToTwo;		// 22 bytes			377
-	private String invoiceToThree;		// 22 bytes			399
-	private String invoiceToFour;		// 22 bytes			421
-	private String invoiceToFive;		// 22 bytes			443
-	private String shipToOne;			// 22 bytes			465
-	private String shipToTwo;			// 22 bytes			487
-	private String shipToThree;			// 22 bytes			509
-	private String shipToFour;			// 22 bytes			531
-	private String shipToFive;			// 22 bytes			553
-	private String customerType;		// 22 bytes			575
-	private String terms;				// 22 bytes			597
-	private String rep;					// 22 bytes			619
-	private String salesTaxCode;		// 22 bytes			641
-	private String taxCountry;			// 22 bytes			663
-	private String businessNumber;		// 22 bytes			685
-	private String accountNumber;		// 22 bytes			707
-	private String creditLimit;			// 22 bytes			729
-	private String jobStatus;			// 22 bytes			751
-	private String jobType;				// 22 bytes			773
-	private String jobDescription;		// 22 bytes			795
-	private Date startDate;				// 32 bytes			827
-	private Date projectedEnd;			// 32 bytes			859
-	private Date endDate;				// 32 bytes			891
+	private boolean status; 			// 1 byte				9
+	private String customer;			// 39 + 2 bytes			50
+	private String currency;			// 3 + 2 bytes			55
+	private double balance;				// 8 bytes				63
+	private double totalBalance;		// 8 bytes				71
+	private String company;				// 27 + 2 bytes			100
+	private String title;				// 23 + 2 bytes			125		//Mr. Mrs. Miss
+	private String firstName;			// 23 + 2 bytes			150
+	private String middleInitial;		// 23 + 2 bytes			175
+	private String lastName;			// 23 + 2 bytes			200
+	private String primaryContact;		// 23 + 2 bytes			225
+	private String mainPhone;			// 23 + 2 bytes			250
+	private String fax;					// 23 + 2 bytes			275
+	private String alternativePhone;	// 23 + 2 bytes			300
+	private String secondaryContact;	// 23 + 2 bytes			325
+	private String jobTitle;			// 23 + 2 bytes			350
+	private String mainEmail;			// 23 + 2 bytes			375
+	private String invoiceToOne;		// 23 + 2 bytes			400
+	private String invoiceToTwo;		// 23 + 2 bytes			425
+	private String invoiceToThree;		// 23 + 2 bytes			450
+	private String invoiceToFour;		// 23 + 2 bytes			475
+	private String invoiceToFive;		// 23 + 2 bytes			500
+	private String shipToOne;			// 23 + 2 bytes			525
+	private String shipToTwo;			// 23 + 2 bytes			550
+	private String shipToThree;			// 23 + 2 bytes			575
+	private String shipToFour;			// 23 + 2 bytes			600
+	private String shipToFive;			// 23 + 2 bytes			625
+	private String customerType;		// 23 + 2 bytes			650
+	private String terms;				// 23 + 2 bytes			675
+	private String rep;					// 23 + 2 bytes			700
+	private String salesTaxCode;		// 23 + 2 bytes			725
+	private String taxCountry;			// 23 + 2 bytes			750
+	private String businessNumber;		// 23 + 2 bytes			775
+	private String accountNumber;		// 23 + 2 bytes			800
+	private String creditLimit;			// 23 + 2 bytes			825
+	private String jobStatus;			// 23 + 2 bytes			850
+	private String jobType;				// 23 + 2 bytes			875
+	private String jobDescription;		// 23 + 2 bytes			900
+	private Date startDate;				// 32 bytes				932
+	private Date projectedEnd;			// 32 bytes				964
+	private Date endDate;				// 32 bytes				996
 	
 	//Constructors
 	/**
